@@ -8,7 +8,7 @@ dockerpath=eebru/project4
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run container --image=$dockerpath
+kubectl run mypod --image=$dockerpath
 
 
 # Step 3:
@@ -18,5 +18,5 @@ kubectl get pods
 # Step 4:
 # Forward the container port to a host
 yum install socat -y
-kubectl port-forward container 8000:80
+kubectl port-forward mypod 8000:80
 
