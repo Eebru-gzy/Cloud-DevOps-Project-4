@@ -9,4 +9,4 @@ curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/miniku
 && sudo mv minikube /usr/local/bin/
 minikube version
 sudo yum install conntrack -y
-minikube start --driver=none
+minikube start --driver=docker

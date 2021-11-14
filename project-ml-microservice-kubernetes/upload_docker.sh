@@ -5,11 +5,17 @@
 
 # Step 1:
 # Create dockerpath
-# dockerpath=<your docker ID/path>
+ dockerpath=eebru/project4
 
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
+docker login -u eebru
+
+#docker tag col bashox/udacity[:latest]
+#docker commit col bashox/udacity[:latest]
 
 # Step 3:
-# Push image to a docker repository
+# Push image to a docker repository\
+docker tag project4 eebru/udacity-project4
+docker push eebru/udacity-project4
